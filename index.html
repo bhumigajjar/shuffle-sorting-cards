@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle & Sort Cards</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="js/custom.js"></script>
+    <script>
+        let array = getArray();
+        window.addEventListener('load', function(){
+            renderNumberCards(array)
+        });
+    </script>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="center">Shuffle and Sort</header>
+        <!-- Numbers -->
+        <div id="gridWrapper" class="grid-wrapper"></div>
+        <!-- Side buttons - Shuffle & Sort-->
+        <aside>
+            <button id = "shuffle" onclick="shuffleNumbers(array)">Shuffle</button>
+            <button id = "sort"  onclick="sortNumbers(array)"> Sort</button>
+        </aside>
+        <!-- Footer -->
+        <footer class="center">Shuffle and Sort by Bhumi</footer>
+    </div>
+</body>
+</html>
